@@ -1,13 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Multi from './componentes/Multiplos'
+import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
+
 
 ReactDOM.render(
-<div>
-    <Multi.BoaNoite nome="Ana"></Multi.BoaNoite>
-    <Multi.BoaTarde nome="Bia"></Multi.BoaTarde>
-</div>
+    <div>
+        <Pai nome="Paulo" sobrenome="Silva">
+            {/* Como passo os componentes filhos aqui? */}
+            <Filho nome="Pedro" sobrenome="Silva"></Filho>
+            <Filho nome="Paulo" sobrenome="Silva"></Filho>
+            <Filho nome="Carla" sobrenome="Silva"></Filho>
+        </Pai>
+    </div>
 
 
-, document.getElementById('root'))
+    , document.getElementById('root'))

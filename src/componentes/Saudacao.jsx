@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-
-
 export default class Saudacao extends Component{
     state = {
         tipo: this.props.tipo,
         nome: this.props.nome
     }
+
+   
     setTipo(e){
     this.setState({tipo: e.target.value})
     }
